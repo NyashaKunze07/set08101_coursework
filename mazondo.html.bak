@@ -5,12 +5,14 @@
 	</head>
 	<body>
 		<nav>
+			<h3>NK's food court</h3>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/index.html">Home</a>
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/recipes.html">Recipes</a>
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/food.html">Food</a>
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
 		</nav>
 		<h1>Mazondo</h1>
-		<img src="Mazondo.jpeg"/>
+		<img src="mazondoo.jpeg" alt="cooked cow feet" width="400" height="500">
 		<h2>Ingredients and Utensils</h2>
 			<ul>
 				<li>1.2 kg mazondo (cow heels)</li>

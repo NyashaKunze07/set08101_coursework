@@ -5,5 +5,19 @@
 	</head>
 	<body>
 		<h1>ABOUT</h1>
+		<nav>
+			<h3>NK's food court</h3>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/index.html">Home</a>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/recipes.html">Recipes</a>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/food.html">Food</a>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
+		</nav>
+		
+		
+		
+		<footer> NK's Food Court  2023 - All rights reserved 
+				instagram   twitter 
+				<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
+		</footer>
 	<body>
 </html>
