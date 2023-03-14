@@ -4,6 +4,15 @@
 		<title>Recipes</title>
 	</head>
 	<body>
-		<h1> Welcome to the home of Zimbabwean Food</h1>
+		<nav>
+			<h3>NK's food court</h3>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/recipes.html">Recipes</a>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/food.html">Food</a>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
+		</nav>
+		<h1>RECIPES</h1>
+			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/mazondo.html"><img src="Mazondo.jpeg"/>
+			</a>
+			
 	<body>
 </html>
