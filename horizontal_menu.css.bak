@@ -3,7 +3,7 @@ body {
 }
 
 h3{
-	font-family: courier new;
+	font-family: script;
 	colour : black;
 	text-align: center;
 	font-size: 30px;
@@ -14,12 +14,16 @@ p{
 	text-align: center;
 }
 h1{
+	font-family: courier new;
 	text-align:center;
 	font-size: 40px
 }
-ol,ul {
-	list-style: none;
+h2{
+	font-family: courier new;
+	text-align:center;
+	font-size: 36px
 }
+
 #mainMenu{
 	margin: 10px;
 	width: 900px;
@@ -29,34 +33,14 @@ ol,ul {
 	display: block;
 	width: 120px;
 	float:left;
-	margin-left:2px;
-	
+	margin-left:2px;	
+}
+#ingredients{
+	text-align: center;
 }
 .center{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-}
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
 }
