@@ -10,6 +10,7 @@
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/recipes.html">Recipes</a>
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/food.html">Food</a>
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
+			<input type ="text" placeholder="Search...">
 		</nav>
 		<h1>Mazondo</h1>
 		<img src="mazondoo.jpeg" alt="cooked cow feet" width="400" height="500">

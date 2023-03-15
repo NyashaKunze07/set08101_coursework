@@ -11,9 +11,9 @@
 		</header>
 		<nav>
 		<a href ="index.html">Home</a>
-		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/recipes.html">Recipes</a>
-		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/food.html">Food</a>
-		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
+		<a href ="recipes.html">Recipes</a>
+		<a href ="food.html">Food</a>
+		<a href ="about.html">About</a>
 		<input type ="text" placeholder="Search...">
 		</nav>
 		

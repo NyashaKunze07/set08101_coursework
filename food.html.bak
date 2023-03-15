@@ -10,6 +10,7 @@
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/recipes.html">Recipes</a>
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/food.html">Food</a>
 			<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
+			<input type ="text" placeholder="Search...">
 		</nav>
 		<h1>FOOD</h1>
 			<button onclick="window.location.href='file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/popular.html';">
