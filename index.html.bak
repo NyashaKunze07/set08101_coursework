@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>NK's Food Court</title>
+		<meta charset="UTF-8">
+		<title>NK's Food Court</title>		
 	</head>
-	<body>
+	<body>	
+	<main>
+		<header>
+			<h3>NK's food court</h3>
+		</header>
 		<nav>
-		<h3>NK's food court</h3>
-		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/index.html">Home</a>
+		<a href ="index.html">Home</a>
 		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/recipes.html">Recipes</a>
 		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/food.html">Food</a>
 		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
 		<input type ="text" placeholder="Search...">
 		</nav>
+		
 		<h2> Welcome to the home of Zimbabwean Food</h2>
-		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/mazondo.html"><img src="Mazondo.jpeg"/>
+		<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/mazondo.html"><img src="mazondoo.jpeg" alt="cows feet" width="500" height "500"/>
 		</a>
 		
 		<footer> NK's Food Court  2023 - All rights reserved 
 				instagram   twitter 
 				<a href ="file:///C:/Users/nyash/OneDrive/coursework/set08101_coursework/about.html">About</a>
 		</footer>
+	</main>
 	<body>
 </html>
