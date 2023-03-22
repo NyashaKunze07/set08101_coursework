@@ -2,7 +2,7 @@
 	list-style: none;
 	margin: 0;
 	
-	background: chocolate;
+	background: #6A040F;
 	
 	display: flex;
 	

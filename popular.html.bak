@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<link rel="stylesheet" href="horizontal_menu.css">	
+	<link rel ="stylesheet" href ="mainmenu.css">
 		<title>popular food</title>	
 </head>
 <body>	
@@ -10,7 +10,7 @@
 		<h3>NK's Food Court</h3>
 	</header>
 		<nav>
-			<ul id="mainMenu">
+			<ul class="mainMenu">
 				<li><a href ="index.html">Home</a></li>
 				<li><a href ="recipes.html">Recipes</a></li>
 				<li><a href ="food.html">Food</a></li>
