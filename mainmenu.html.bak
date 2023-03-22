@@ -7,19 +7,14 @@
 </head>
 <body>
 <ul class ="mainmenu">
-	<h3 align="center" >NK's Food Court</h3>
+	<h3>NK's Food Court</h3>
 	<li><a href ="index.html">Home</a></li>
 	<li><a href ="recipes.html">Recipes</a></li>
 	<li><a href ="food.html">Food</a></li>
 	<li><a href ="about.html">About</a ></li>
 </ul>
-	<h2 align="center"> Welcome to the home of Zimbabwean Food</h2>
-	<img src="mazondoo.jpeg" alt="cows feet" width="500" height "500" class="center"/>
-		</a>
-		
-	<footer> NK's Food Court  2023 - All rights reserved 
-				instagram   twitter 
-		<a href ="about.html">About</a>
-	</footer>	
-<body>
+</body>
 </html>
+
+		
+		

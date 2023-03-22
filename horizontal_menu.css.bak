@@ -28,6 +28,7 @@ h2{
 	margin: 10px;
 	width: 900px;
 	font-family: sans-serif;
+	font-size: 20px
 }
 #mainMenu li{
 	display: block;

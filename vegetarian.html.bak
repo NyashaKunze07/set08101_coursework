@@ -5,8 +5,9 @@
 		<title>Popular Zim Food</title>	
 </head>
 <body>	
+	<img align="left" src="NK's logo.png" alt="letters N and K" width="100" height "100"/>
 	<header>
-		<img align="left" src="NK's logo.png" alt="letters N and K" width="100" height "100"/><h3>NK's Food Court</h3>
+		<h3>NK's Food Court</h3>
 	</header>
 		<nav>
 			<ul id="mainMenu">
