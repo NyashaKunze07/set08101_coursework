@@ -2,7 +2,7 @@
 	list-style: none;
 	margin: 0;
 	
-	background: #ff9205;
+	background: #f0dcce;
 	
 	display: flex;
 	
@@ -14,10 +14,11 @@
 	text-decoration: none;
 	display: block;
 	padding: 1em;
-	color: black;
-	
+	color: #000000;
 }
-
+body {
+	background: #ffffff;
+}
 
 .mainmenu a:hover {
 	background: darken(rosybrown, 2%);
