@@ -6,6 +6,7 @@
 	overflow: hidden;
 	background: #f0dcce;	
 }
+/*flex box*/
 .aboutsection {
 	display:flex;
 	align-items: center;
@@ -53,7 +54,13 @@ body {
 	margin-right: 16px;
 	font-size: 17px;
 }
-
+.row {
+	display: flex;
+}
+.thumbnail{
+	flex: 33.33%;
+	padding : 5px;
+}
 /*When the screen is less than 600px wide, stack the lines and search field vertical*/
 @media screen and (max-width: 800px) {
 	.mainmenu a , .mainmenu input[type=text]{
@@ -73,6 +80,12 @@ body {
 	img {
 		width: 100%;
 		height: auto;
+	}
+	.column4 {
+		display:none;
+	}
+	.thumbnail{
+		width: 100%
 	}
 }
 

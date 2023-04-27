@@ -5,6 +5,9 @@
 img{
     border: 1px solid black
 }
+p{
+    word-break: keep-all;
+}
 .column {
     float: left;
     width: 50%;
