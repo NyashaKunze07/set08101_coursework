@@ -40,7 +40,7 @@ body {
 }
 
 /*When the screen is less than 600px wide, stack the lines and search field vertical*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 	.mainmenu a , .mainmenu input[type=text]{
 		float: none;
 		display: block;
