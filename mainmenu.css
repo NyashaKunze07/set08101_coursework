@@ -4,8 +4,11 @@
 }
 .mainmenu {
 	overflow: hidden;
-	background: #f0dcce;
-	
+	background: #f0dcce;	
+}
+.aboutsection {
+	display:flex;
+	align-items: center;
 }
 /*Styling the navigation bar*/
 .mainmenu a {
@@ -15,7 +18,19 @@
 	display: block;
 	padding: 14px 16px;
 	color: #000000;
-	font-size: 17px;
+	font-size: 17px;	
+}
+/*Container with image*/
+.display-container{
+	position:relative;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+.display-bottomleft{
+	position: absolute;
+	bottom: 8px;
+	left:16px;
+	font-size:xx-large;
 }
 
 /*page background colour*/
@@ -40,7 +55,7 @@ body {
 }
 
 /*When the screen is less than 600px wide, stack the lines and search field vertical*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.mainmenu a , .mainmenu input[type=text]{
 		float: none;
 		display: block;
@@ -51,6 +66,13 @@ body {
 	}
 	.mainmenu input[type=text]{
 		border: #000000;
+	}
+	.aboutsection{
+		flex-direction: column;
+	}
+	img {
+		width: 100%;
+		height: auto;
 	}
 }
 
