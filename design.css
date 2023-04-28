@@ -20,7 +20,13 @@ p{
     max-width: 33.33%;
     padding: 5px;
  }
- .column img{
+ /*2 column for vegetarian page*/
+ .column1{
+    flex:50%;
+    max-width: 50%;
+    padding: 5px;
+ }
+ .column .column1 img{
     margin-top: 8px;
     vertical-align: middle;
     width:100%;

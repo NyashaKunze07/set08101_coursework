@@ -1,32 +1,26 @@
 /*Reference :https://www.w3schools.com/howto/howto_css_button_on_image.asp*/
-.container {
+#container {
   position: relative;
   width: 100%;
   max-width: 400px;
+  margin: 0 auto;
+  display:block;
 }
 
-.container img {
-  width: 100%;
-  height: auto;
-}
-
-.container .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  color: black;
-  font-size: 16px;
-  padding: 16px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.container .btn:hover {
+#container .button:hover {
   background-color: black;
   color: white;
+}
+
+.button {
+    background-color: lightgray;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

@@ -5,35 +5,158 @@
 	<title>Food</title >
 	<link rel ="stylesheet" href ="mainmenu.css">
 	<link rel ="stylesheet" href ="food.css">
+	<link rel="stylesheet" href="design.css">
 
 </head>
 <body>
-	<div class ="mainmenu">
+	<div class="mainmenu">
 		<a class="active" href="index.html">Home</a>
 		<a href="recipes.html">Recipes</a>
 		<a href="food.html">Food</a>
 		<a href="about.html">About</a>
-		<input type="text" placeholder ="Search..">
+		<input type="text" placeholder="Search..">
 	</div>
-		<h1>Food</h1>
-			
-		<div class ="container">
-			<img src="porkbones.jpeg" alt="Pork bones" style="width:80%">
-			<a href="popular.html">
-				<button class ="btn">Popular Food</button>
-			</a>	
-		</div>
+	<h1>Food</h1>
 
-		<div class ="container">
-			<img src="muboora.jpeg" alt="pumpkin leaves" style="width:100%">
-			<a href ="vegetarian.html">
-				<button class ="btn">Vegetarian Food</button>
-			</a>
+	<div id="container" align="center">
+		<form style="display:inline" action="#popular" method="get">
+			<button class="button">Popular Food</button>
+		</form>
+
+		<form style="display:inline" action="#vegetarian" method="get">
+			<button class="button">Vegetarian Food</button>
+		</form>
+	</div>
+	<!--Main Content : Popular Food-->
+	<div id="popular">
+		<h1 align="center">Popular Zimbabwean Food</h1>
+
+		<div class="row">
+			<div class="column">
+				<h4>Sadza</h4>
+				<a href="sadza.html">
+					<img src="sadza.jpeg" alt="braai meat" width="400" height="400">
+				</a>
+				<p> FOOD DESCRIPTION</p>
+
+			</div>
+
+			<div class="column">
+				<h4>Mazondo(Ma-zou-ndo) - Cow heels</h4>
+				<a href="mazondo.html">
+					<img src="mazondoo.jpeg" alt="cooked cow feet" width="400" height="400">
+				</a>
+				<p>
+					FOOD DESCRIPTION
+
+					<a href="mazondo.html">Recipe for Mazondo! </a>
+				</p>
+			</div>
+
+			<div class="column">
+				<h4>Braai</h4>
+				<img src="braai.jpg" alt="braai meat" width="400" height="400">
+				<p>
+					FOOD DESCRIPTION
+					<a href="braai.html">Braai Recipe!</a>
+				</p>
+			</div>
+
+			<div class="column">
+				<h4>Maguru -Tripe</h4>
+				<a href="tripe.html">
+					<img src="tripe.png" alt="cooked cow stomach meat" width="400" height="400">
+				</a>
+				<p>
+					Maguru (tripe) is one of Zimbabwe's most popular traditional dishes.
+					Zimbabweans, especially those who live in rural areas, always
+					look forward to maguru whenever a beast (cow) is slaughtered.
+					This treat tastes fantastic when served with sadza.
+					You can find the recipe here: <a href="tripe.html"> Tripe Recipe</a>.
+				</p>
+			</div>
+
+			<div class="column">
+				<h4>Pork Bones</h4>
+				<a href="porkbones.html">
+					<img src="porkbones.jpeg" alt="cooked cow stomach meat" width="400" height="400">
+				</a>
+				<p>
+					Maguru (tripe) is one of Zimbabwe's most popular traditional dishes.
+					Zimbabweans, especially those who live in rural areas, always
+					look forward to maguru whenever a beast (cow) is slaughtered.
+					This treat tastes fantastic when served with sadza.
+					You can find the recipe here: <a href="tripe.html"> Tripe Recipe</a>.
+				</p>
+			</div>
+
+			<div class="column">
+				<h4>Haifiridzi ~ Mixed Kale and Beef</h4>
+				<a href="haifiridzi.html">
+					<img src="haifiridzi.jpeg" alt="mixed beef and veggies" width="400" height="400">
+				</a>
+				<p>
+					Beef Haifiridzi is a popular dish many Zimbabweans grew up eating.
+					This dish takes its name haifiridzi from Highfield, one of Zimbabwe's oldest suburbs
+					in the its capital Harare. Houses around Highfield and many other surburs across Zimbabwe
+					usually have a small garden in the backyard growing leafy greens.
+					Taking the leafy greens and adding to the meat
+					instantly beefs up your dish allowing you to feed many.
+					You can find the recipe here : <a href="haifiridzi.html"> Haifiridzi Recipe</a>.
+				</p>
+			</div>
 		</div>
-		
-		<footer> NK's Food Court  2023 - All rights reserved 
-				instagram   twitter 
-				<a href ="about.html">About</a>
+	</div>
+
+	<!--Vegetarian Food section-->
+	<div id="vegetarian">
+		<h1 align="center">Vegetarian Zimbabwean Food</h1>
+		<div class="row">
+			<div class="column1">
+				<h3>Muboora~Pumpkin Leaves</h3>
+				<a href="muboora.html">
+					<img src="muboora.jpeg" alt="cooked pumpkin leaves" width="500" height="500">
+				</a>
+				<p>FOOD DESCRIPTION</p>
+			</div>
+
+			<div class="column1">
+				<h3>Derere ~Okra</h3>
+				<a href="okra.html">
+					<img src="okra.jpeg" alt="cooked okra" width="500" height="500">
+				</a>
+				<p>Food description</p>
+			</div>
+
+			<div class="column1">
+				<h3>Rice rine dovi ~ Peanut Butter Rice </h3>
+				<a href="PBrice.html">
+					<img src="PBrice.jpeg" alt="Rice and peanut butter" width="500" height="500">
+				</a>
+				<p>Rice rine dovi (with peanut butter) is very nutritious. Its kinda... </p>
+			</div>
+
+			<div class="column1">
+				<h3>Porridge rine dovi ~ Peanut Butter porridge</h3>
+				<a href="PBporridge.html">
+					<img src="PBporridge.jpg" alt="Cornmeal porridge with peanut butter" width="500" height="500">
+				</a>
+				<p>
+					Porridge reHupfu (mealie-meal porridge) is something that just about every Zimbabawean
+					has had as a child growing up and even as an adult. It has been passed down from generation to generation
+					and it's most certainly a part of Zimabawean dishes. Its more like making sadza and cutting the process
+					half way through. You can find a link to the recipe here: <a href="PBporridge.html">Porridge Recipe</a>
+				</p>
+			</div>
+
+		</div>
+	</div>
+
+
+		<footer>
+			NK's Food Court  2023 - All rights reserved
+			instagram   twitter
+			<a href="about.html">About</a>
 		</footer>
-	<body>
+</body>
 </html>
