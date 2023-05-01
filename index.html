@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang ="en">
 <head>
-	<meta name ="viewport" content = "width=device-width, inital-scale = 1.0">
+	<meta charset="utf-8" />
+	<meta name ="viewport" content = "width=device-width, intial-scale =1">
 	<title>NK's Food Court</title >
 	<link rel ="stylesheet" href ="mainmenu.css">
 </head>
+
 <body>
 <!--navigation bar-->
-	<div class ="mainmenu">
+	<div class ="mainmenu" style="letter-spacing:4px";>
 		<a class="active" href="index.html">NK's Food Court</a>
 		<a href="index.html">Home</a>
 		<a href="recipes.html">Recipes</a>
@@ -15,19 +17,24 @@
 		<a href="about.html">About</a>
 		<input type="text" placeholder ="Search...">
 	</div>
-<!-- Image display container--> 
-	<div class ="display-container">
-		<img src="home.jpeg" alt="cows feet" width="1250" height ="500">
-		<div class="display-bottomleft">NK's Food Court</div>
+  
+<!-- Header: Image display container--> 
+
+	<div class ="display-container" style="max-width:1600px; min-width:500px" >
+		<img src="home.jpeg" alt="cows feet" width="1600" height ="800">
+		<div class="display-bottomleft">
+			<h1 class="name">NK's Food Court</h1>
+		</div>
 	</div>
 <!--Page content-->
-<div class = "content" style="max-width: 1100px;">
+	<div class = "content" style="max-width: 1100px;">
 	<!--About Zimbabwe-->
 		<div class="aboutsection" id="about">
 			<div class="abouttext">
 				<h1 align="center"> About Zimbabwean Food</h1>
 				<br>
-				<p>Food from Zimbabwe comes in a variety of flavours and colours. 
+				<p class="text">Food from Zimbabwe comes in a variety of flavours and colours. 
+					<br />
 					The country has developed a variety in its culture, rituals, 
 					lifestyle, and cuisine with the arrival of European colonists.
 					Salted groundnuts, sadza and relish, and peanut butter rice are a few of 
@@ -41,7 +48,7 @@
 				 </p>
 			</div>
 			<div class="column4">
-				<img src="braai.jpg" alt="braai meat" width="600" height="500">
+				<img src="braai.jpg" alt="braai meat" width="800" height="750">
 			</div>
 		</div>
 		<br>
@@ -52,24 +59,25 @@
 			<div class="thumbnail">
 				<p>Sadza</p>
 				<a href="sadza.html">
-					<img src="sadza.jpeg" alt="sadza" width="150" height="auto">
+					<img src="sadza.jpeg" alt="sadza" width="150" >
 				</a>
 			</div>
 			<div class="thumbnail">
 				<p>Braai</p>
 				<a href="braai.html">
-					<img src="braai.jpg" alt="braai" width="150" height="auto">
+					<img src="braai.jpg" alt="braai" width="150">
 				</a>
 			</div>
 			<div class="thumbnail">
 				<p>Pumpkin leaves</p>
 				<a href="muboora.html">
-					<img src="muboora.jpeg" alt="pumpkin leaves" width="150" height="auto">
+					<img src="muboora.jpeg" alt="pumpkin leaves" width="150">
 				</a>
 			</div>	
 		</div>
 	</div>
 </div>
+
 <hr>
 	<footer align="center"> 
 		NK's Food Court  2023

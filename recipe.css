@@ -30,8 +30,7 @@ body {
 }
 img{
     border: 1px solid black;
-	align-content:center;
-	
+	align-content:center;	
 }
 
 .row {
@@ -44,13 +43,12 @@ img{
 .column  {
 	flex: 50%;
 	max-width: 50%;
-	padding: 0 5px;
-	
+	padding: 0 5px;	
 }
 
 /*Responsive Layout*/
-@media screen and (max-width: 800px) {
-    .column {
+@media screen and (max-width: 600px) {
+    .row .column {
         width:100%
     }
     .mainmenu a , .mainmenu input[type=text]{
