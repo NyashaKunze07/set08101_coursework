@@ -47,7 +47,7 @@ img{
 }
 
 /*Responsive Layout*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .row .column {
         width:100%
     }
@@ -61,5 +61,8 @@ img{
 	}
 	.mainmenu input[type=text]{
 		border: #000000;
+	}
+	.row{
+		flex-direction:column;
 	}
 }

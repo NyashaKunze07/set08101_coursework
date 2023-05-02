@@ -1,5 +1,5 @@
 /*Background colour for navigation*/
-* {
+*,*::before, *::after {
 	box-sizing: inherit;
 }
 
@@ -54,6 +54,7 @@ p {
 	padding: 16px;
 	/*margin-top:30px!important;Avoid content overlay*/
 	height: auto;
+	background-color:white!important;
 }
 
 .name {
@@ -62,11 +63,11 @@ p {
 /*Container with image*/
 .display-container {
 	/*margin-top: 30px!important; Avoid content overlay*/
-	padding:16px;
-	padding-top:48px!important;
-	padding-bottom:48px!important;
-	text-align:center!important;
-	background-color:lightgray!important;
+	padding: 16px;
+	padding-top: 48px !important;
+	padding-bottom: 48px !important;
+	text-align: center !important;
+	background: #d3cdcd !important;
 }
 h6{
 	font-size:20px;
@@ -110,8 +111,9 @@ h6{
 }
 
 .column4 {
-	opacity: 0.75;
-	border-radius: 4px;
+	padding-top:16px!important;
+	padding-bottom:16px!important;
+	vertical-align:middle;
 	max-width: 100px;
 	height: auto;
 }
@@ -122,8 +124,23 @@ h6{
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 64px !important;
-	padding-bottom: 64px !important;
+	padding: 12px 24px !important;
+	margin:16px!important;
+}
+.aboutsection::before .aboutsection::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.aboutheading{
+	text-align:center!important;
+	font-size:20px !important;
+	line-height:1.5;
+	color:black;
+	background-color:white
+}
+.abt{
+	text-align:justify;
 }
 
 .abouttext {
@@ -133,10 +150,20 @@ h6{
 
 .text {
 	font-size: 18px !important;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
 }
 /*page background colour*/
 body {
-	background: #ffffff;
+	background: #d3cdcd;
+}
+menu{
+	float:left;
+	width:100%;
+	display:block;
 }
 
 .row {
@@ -148,6 +175,8 @@ body {
 .thumbnail {
 	flex: 33.33%;
 	padding: 5px;
+	margin:16px!important;
+
 }
 /*When the screen is less than 600px wide, stack the lines and search field vertical*/
 @media screen and (max-width: 800px) {
@@ -164,8 +193,9 @@ body {
 		border: #000000;
 	}
 
-	.aboutsection {
+	.aboutsection .row .menu .content .thumbnail .img {
 		flex-direction: column;
+		width: 100%;
 	}
 
 	img {
@@ -176,19 +206,14 @@ body {
 	.column4 {
 		display: none;
 	}
-
-	.row {
-		flex-direction: column;
-	}
-
-	.thumbnail {
-		width: 100%;
-		flex-direction: column;
-	}
 }
 
-@media (min-width: 601px) {
+@media (min-width: 801px) {
 	.aboutsection .row {
 		width: 49.99999%;
 	}
+	.menu {
+		width: 33.3333%;
+	}
+
 }
