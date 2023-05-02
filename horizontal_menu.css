@@ -57,8 +57,12 @@ p {
 	background-color:white!important;
 	display: flex;
 	flex-wrap:wrap;
+	
 }
 
+.content,h2{
+	justify-content:center!important;
+}
 .name {
 	font-size: 48px !important;
 }
@@ -87,9 +91,8 @@ h6{
 }
 
 .display-image{
-	max-width:100%;
-	
-	
+	max-width:auto;
+	justify-content:center!important;
 }
 .display-text ,.foot{
 	color:black!important;
@@ -109,55 +112,54 @@ h6{
 	margin: 4px 2px;
 	cursor: pointer;
 }
-.main {
+.main .content {
 	/*margin-top:30px!important;*/
+	max-width:auto;
 }
 
-.column4 {
-	padding-top:16px!important;
-	padding-bottom:16px!important;
-	vertical-align:middle;
-	max-width: 100px;
-	
-}
+
+
 /*flex box*/
-.aboutsection {
-	align-content: center;
+#about {
+	
 	display: flex;
+	flex-wrap: wrap;
+	padding: 16px !important;
 	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 12px 24px !important;
-	margin:16px!important;
-	flex: 50%;
-	max-width:50%;
+	margin: 30px;
+	background-color: white;
+	text-align: center;
+	border:3px black;
+	justify-content:center;
 }
+
 .aboutsection::before .aboutsection::after{
 	content:"";
 	display:table;
 	clear:both;
 }
-.aboutheading{
+/*.about1{
 	text-align:center!important;
 	font-size:20px !important;
 	line-height:1.5;
 	color:black;
 	background-color:white;
 	flex:25%
-}
-.abt{
-	text-align:justify;
-	flex:25%;
-	max-width:500px;
-	height:auto;
-}
+}*/
 
-.abouttext {
+
+/*.about1 {
 	font: "Times new Roman" !important;
 	padding: 12px 24px !important;
 	display:flex;
 }
+*/
+.about1 {
+	flex: 33.333%;
+	max-width: 33.333%;
+	padding: 10px;
 
+}
 .text {
 	font-size: 18px !important;
 	display: block;
@@ -215,6 +217,9 @@ menu{
 
 	.abt {
 		display: none;
+	}
+	.braai{
+		display:none;
 	}
 }
 
