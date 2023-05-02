@@ -80,11 +80,11 @@ body {
 	background: #d3cdcd !important;
 }
 
-.column {
+/*.column {
 	flex: 33.333%;
 	max-width: 33.333%;
 	padding: 10px;
-}
+}*/
 .main{
 	max-width:auto;
 	justify-content:center;
@@ -119,4 +119,33 @@ body {
 	p{
 		width:100%;
 	}
+}
+/*Large Desktop view*/
+@media screen and (min-width:1300px){
+	
+	.column {
+		flex: 33.333%;
+		max-width: 33.333%;
+		padding: 10px;
+	}
+
+}
+/*laptop*/
+@media screen and (min-width:940px) and (max-width: 1300px){
+	.column {
+		flex: 50%;
+		max-width: 50%;
+		padding: 10px;
+	}
+}
+
+/*Phone*/
+@media screen and (max-width:940) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+		padding: 10px;
+		
+	}
+	
 }
