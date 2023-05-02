@@ -10,6 +10,9 @@
 	width: 100%;
 	top: 0; /*position navigation bar at the top of the page*/
 }
+p{
+	width:400px;
+}
 
 	/*Styling the navigation bar*/
 	.mainmenu a {
@@ -61,7 +64,7 @@ body {
 }
 
 /*Responsive Layout*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1060px) {
     .row .column {
         width:100%
     }
@@ -78,5 +81,11 @@ body {
 	}
 	.row{
 		flex-direction:column;
+		margin:5px!important;
+		max-width:750px
+	}
+	p{
+		width:100%;
+
 	}
 }

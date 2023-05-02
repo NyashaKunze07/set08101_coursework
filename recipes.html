@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang ="en">
 <head>
-	<meta name ="viewport" content = "width=device-width, inital-scale = 1.0">
-	<title>Recipes</title >
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<title>Recipes</title>
 	<!--link rel ="stylesheet" href ="mainmenu.css"-->
-	<link rel ="stylesheet" href ="recipe.css">
+	<link rel="stylesheet" href="recipe.css">
 </head>
 <body>
 	<!--navigation bar-->
@@ -18,79 +19,148 @@
 		<input type="text" placeholder="Search...">
 	</div>
 	
-	<h1 align="center">Recipes</h1>
-	<h2 align="center">Meaty Recipes</h2>
+	
 	
 	<!--Page content-->
-	<div class="row" id="meat" style="max-width:1600px">
-		<div class="column">
-			<h3>Sadza</h3>
-			<a href="sadza.html">
-				<img src="sadza.jpeg" alt="sadza" width="400" height="400">
-			</a>
-		</div>
-		<div class="column">
-			<h3>Mazondo (cow-heels)</h3>
-			<a href="mazondo.html">
-				<img src="mazondoo.jpeg" alt="cooked cow feet" width="400" height="400">
-			</a>
-		</div>
-		<div class="column">
-			<h3>Braai</h3>
-			<a href="braai.html">
-				<img src="braai.jpg" alt="meat on a barbaque" width="400" height="400">
-			</a>
-		</div>
-		<div class="column">
-			<h3>Tripe</h3>
-			<a href="tripe.html">
-				<img src="tripe.png" alt="tripe" width="400" height="400">
-			</a>
-		</div>
+	<div class="main" id="meat" style="max-width:1600px">
+		<div class="heading">
+			<h1 align="center">Recipes</h1>
+			<div id="container" align="center">
+				<form style="display:inline" action="#popular" method="get">
+					<button class="button">Meaty Recipes</button>
+				</form>
 
-		<div class="column">
-			<h3>Mixed Beef and Kale</h3>
-			<a href="haifiridzi.html">
-				<img src="haifiridzi.jpeg" alt="mixed beef and kale" width="400" height="400">
-			</a>
-		</div>
+				<form style="display:inline" action="#vegetarian" method="get">
+					<button class="button">Vegetarian Food</button>
+				</form>
+			</div>
 
-		<div class="column">
-			<h3>Pork Bones</h3>
-			<a href="porkbones.html">
-				<img src="porkbones.jpeg" alt="cooked porkbones" width="400" height="400">
-			</a>
+		</div>
+		<h1 align="center" id="popular">Meaty Recipes</h1>
+		<div class="row">
+			<div class="column">
+				<h3>Sadza</h3>
+				<a href="sadza.html">
+					<img src="sadza.jpeg" alt="sadza" width="400" height="400">
+				</a>
+				<p>
+					Sadza (pronounced Sa-dzaa)is the most eaten food in Zimbabwe, making it the staple food. Seeing as
+					maize thrives in the Zimbabwean climate, most households tend to grow this crop. This
+					is then ground into a powder known as upfu. Own its own sadza has no taste,
+					however it can be served with almost any relish of ones choice.
+					To prepare sadza follow this recipe: <a href="sadza.html"> Sadza Recipe</a>
+				</p>
+			</div>
+			<div class="column">
+				<h3>Mazondo -Cow trotters</h3>
+				<a href="mazondo.html">
+					<img src="mazondoo.jpeg" alt="cooked cow feet" width="400" height="400">
+				</a>
+				<p>
+					Mazondo or cow heels is one of Zimbabwe's most iconic dishes. It particularly best served with sadza
+					and green leafy vegetables. These can be bought directly from a butchery or can be available when
+					a cow is slaughtered on special occasions. In a rural home, these are smoked inorder to preserved them,
+					due to limited access to refrigerators. These are particularly time consuming to prepare,
+					hence require adequate planning. The recipe to make delicious can be found here:
+					<a href="mazondo.html">Recipe for Mazondo.</a>
+				</p>
+			</div>
+			<div class="column">
+				<h3>Braai</h3>
+				<a href="braai.html">
+					<img src="braai.jpg" alt="meat on a barbaque" width="400" height="400">
+				</a>
+				<p>
+					Its not a celebration in Zimbabwe if there is no meat. Particularly braai meat.
+					This is just another term for a barbecue. Mostly on celebtrations like birthdays, Christmas and New Year's
+					it is not unusal to have some pork chops or ribs on a braai stand.
+					This brings the whole family together both young and old.
+					To enjoy some braai meat, follow this recipe:<a href="braai.html"> Braai Recipe</a>
+				</p>
+			</div>
+			<div class="column">
+				<h3>Tripe</h3>
+				<a href="tripe.html">
+					<img src="tripe.png" alt="tripe" width="400" height="400">
+				</a>
+				<p>
+					Maguru (tripe) is one of Zimbabwe's most popular traditional dishes.
+					Zimbabweans, especially those who live in rural areas, always
+					look forward to maguru whenever a beast (cow) is slaughtered.
+					This treat tastes fantastic when served with sadza.
+					You can find the recipe here: <a href="tripe.html"> Tripe Recipe</a>.
+				</p>
+			</div>
+
+			<div class="column">
+				<h3>Mixed Beef and Kale</h3>
+				<a href="haifiridzi.html">
+					<img src="haifiridzi.jpeg" alt="mixed beef and kale" width="400" height="400">
+				</a>
+				<p>
+					Beef Haifiridzi is a popular dish many Zimbabweans grew up eating.
+					This dish takes its name haifiridzi from Highfield, one of Zimbabwe's oldest suburbs
+					in the its capital Harare. Houses around Highfield and many other suburbs across Zimbabwe
+					usually have a small garden in the backyard growing leafy greens.
+					Taking the leafy greens and adding to the meat
+					instantly beefs up your dish allowing you to feed many.
+					You can find the recipe here : <a href="haifiridzi.html"> Haifiridzi Recipe</a>.
+				</p>
+			</div>
+
+			<div class="column">
+				<h3>Pork Bones</h3>
+				<a href="porkbones.html">
+					<img src="porkbones.jpeg" alt="cooked porkbones" width="400" height="400">
+				</a>
+				<p>
+					When it comes to pork, no meat goes to waste. Pork bones are absolutely delicious.
+					It is truly possible to consume them without leaving an trace,
+					but only when the bones are cooked to a perfect tenders.
+					Follow the recipe below to achieve this: <a href="porkbones.html"> Pork Bones recipe Recipe</a>.
+				</p>
+			</div>
 		</div>
 	</div>
 
-
-	<h1 align="center">Vegetarian Food</h1>
-	<div class="row">
+	<h1 align="center" id="vegetarian">Vegetarian Food</h1>
+	<div class="row" style="max-width:1600px">
 		<div class="column" id="Vegetarian">
-			<h3>Muboora</h3>
+			<h3> Pumpkin Leaves ~ Muboora</h3>
 			<a href="muboora.html">
 				<img src="muboora.jpeg" alt="cooked pumpkin leaves" width="400" height="400">
 			</a>
+			<p>Muboora (Mu-bo-oo-ra) is a highly nutritious vegetable hence its popularity.
+			This can be consumed as a vegetable, cooked with or without peanut butter. Since it is hard on the teeth
+			baking soda or ash residue is added to it, softening its texture. 
+			The recipe can be found here: <a href="muboora.html">Muboora Recipe</a>
+			</p>
 		</div>
-		<div class="column">
-			<p>Okra</p>
-			<a href="okra.html">
-				<img src="okra.jpeg" alt="cooked okra" width="400" height="400">
-			</a>
-		</div>
+		
 
 		<div class="column">
-			<p> Peanut Butter Rice</p>
+			<h3> Peanut Butter Rice ~ Mupunga une Dovi</h3>
 			<a href="PBrice.html">
 				<img src="PBrice.jpeg" alt="Rice and peanut butter" width="400" height="400">
 			</a>
+			<p>
+				Rice with Peanut butter is a common meal among most Zimbabwean ethnic groups.
+				This almost comes second to sadza as most common source of carbohydrates. 
+				This can be served with stew or consumed plain. Follow this recipe: <a href="PBrice.html">Peanut Butter Recipe</a>
+			</p>
 		</div>
 
 		<div class="column">
-			<p>Peanut butter porridge</p>
+			<h3>Peanut butter porridge ~ Bota</h3>
 			<a href="PBporridge.html">
 				<img src="PBporridge.jpg" alt="Cornmeal porridge with peanut butter" width="400" height="400">
 			</a>
+			<p>
+				Bota (mealie-meal porridge)  is something that just about every Zimbabawean
+				has had as a child growing up and even as an adult. It has been passed down from generation to generation
+				and it's most certainly a part of Zimabawean dishes. Its more like making sadza and cutting the process
+				half way through. You can find a link to the recipe here: <a href="PBporridge.html">Porridge Recipe</a>
+			</p>
 		</div>
 	</div>
 	<hr>
