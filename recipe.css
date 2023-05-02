@@ -25,9 +25,9 @@ p{
 		font-size: 17px;
 	}
 		/*Colour of links when hovering*/
-		.mainmenu a:hover {
+		.mainmenu a:hover,  #container .button:hover {
 			background-color: antiquewhite;
-			color: white;
+			color: black;
 		}
 
 	/*Styling the search box*/
@@ -38,8 +38,29 @@ p{
 		margin-top: 8px;
 		margin-right: 16px;
 		font-size: 17px;
-	}
+	} 
 
+#container {
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	display: block;
+}
+
+	
+.button {
+	background-color: #f0dcce;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
 img{
     border: 1px solid black;
 	align-content:center;	
@@ -48,10 +69,12 @@ img{
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	padding:10px;
+	padding:16px!important;
 	align-content:center;
 	align-items:center;
-	margin:30px
+	margin:30px;
+	background-color:white;
+	text-align:center
 }
 body {
 	background: #d3cdcd !important;
@@ -62,9 +85,14 @@ body {
 	max-width: 33.333%;
 	padding: 10px;
 }
+.main{
+	max-width:auto;
+	justify-content:center;
+	
+}
 
 /*Responsive Layout*/
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 800px) {
     .row .column {
         width:100%
     }
@@ -79,13 +107,16 @@ body {
 	.mainmenu input[type=text]{
 		border: #000000;
 	}
-	.row{
-		flex-direction:column;
-		margin:5px!important;
-		max-width:750px
+	.row .main {
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
 	}
 	p{
 		width:100%;
-
 	}
 }
