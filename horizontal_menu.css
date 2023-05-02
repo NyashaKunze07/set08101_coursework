@@ -55,6 +55,8 @@ p {
 	/*margin-top:30px!important;Avoid content overlay*/
 	height: auto;
 	background-color:white!important;
+	display: flex;
+	flex-wrap:wrap;
 }
 
 .name {
@@ -64,8 +66,8 @@ p {
 .display-container {
 	/*margin-top: 30px!important; Avoid content overlay*/
 	padding: 16px;
-	padding-top: 48px !important;
-	padding-bottom: 48px !important;
+	padding-top: 16px !important;
+	padding-bottom: 16px !important;
 	text-align: center !important;
 	background: #d3cdcd !important;
 }
@@ -85,7 +87,7 @@ h6{
 
 .display-image{
 	max-width:100%;
-	height:auto;
+	
 	
 }
 .display-text{
@@ -115,7 +117,7 @@ h6{
 	padding-bottom:16px!important;
 	vertical-align:middle;
 	max-width: 100px;
-	height: auto;
+	
 }
 /*flex box*/
 .aboutsection {
@@ -126,6 +128,8 @@ h6{
 	margin-right: auto;
 	padding: 12px 24px !important;
 	margin:16px!important;
+	flex: 50%;
+	max-width:50%;
 }
 .aboutsection::before .aboutsection::after{
 	content:"";
@@ -137,15 +141,20 @@ h6{
 	font-size:20px !important;
 	line-height:1.5;
 	color:black;
-	background-color:white
+	background-color:white;
+	flex:25%
 }
 .abt{
 	text-align:justify;
+	flex:25%;
+	max-width:500px;
+	height:auto;
 }
 
 .abouttext {
 	font: "Times new Roman" !important;
 	padding: 12px 24px !important;
+	display:flex;
 }
 
 .text {
@@ -161,8 +170,8 @@ body {
 	background: #d3cdcd;
 }
 menu{
-	float:left;
-	width:100%;
+	display:flex;
+	flex-wrap:wrap;
 	display:block;
 }
 
@@ -173,10 +182,9 @@ menu{
 }
 
 .thumbnail {
-	flex: 33.33%;
+	flex: 100%;
 	padding: 5px;
 	margin:16px!important;
-
 }
 /*When the screen is less than 600px wide, stack the lines and search field vertical*/
 @media screen and (max-width: 800px) {
@@ -203,7 +211,7 @@ menu{
 		height: auto;
 	}
 
-	.column4 {
+	.abt {
 		display: none;
 	}
 }
