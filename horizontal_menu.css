@@ -1,6 +1,6 @@
 /*Background colour for navigation*/
 *,*::before, *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -12,8 +12,8 @@ p {
 }
 
 .main{
-	margin-left:auto;
-	margin-right:auto;
+	max-width:auto;
+	justify-content:center;
 }
 .mainmenu {
 	overflow: hidden;
@@ -51,13 +51,14 @@ p {
 	}
 
 .content {
-	padding: 16px;
 	/*margin-top:30px!important;Avoid content overlay*/
-	height: auto;
-	background-color:white!important;
-	display: flex;
-	flex-wrap:wrap;
-	
+	max-width:100%;
+	justify-content:center;
+	background-color:white;
+}
+.main{
+	max-width:auto;
+	justify-content:center;
 }
 
 .content,h2{
@@ -75,19 +76,24 @@ p {
 	padding-bottom: 16px !important;
 	text-align: center !important;
 	background: #d3cdcd !important;
+	width:100%;
+	
 }
 h6{
 	font-size:20px;
 }
 
-.display {
+.display, .menu {
 	display:flex;
 	background-color: white !important;
 	padding: 5px 5px !important;
-	height:200px;
 	max-width:auto;
-	border:black;
-	border:3px black;
+}
+.menu{
+	display:flex;
+	background-color: white !important;
+	padding: 5px 5px !important;
+	max-width:auto;
 }
 
 .display-image{
@@ -119,12 +125,18 @@ h6{
 }
 
 /*flex box*/
-.aboutsection{
+.aboutsection {
 	display: flex;
-	padding: 16px !important;
-	margin: 30px;
-	background-color: white;	
-	border:3px black;
+	align-items:center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding:16px!important;
+	align-content:center;
+	align-items:center;
+	margin:30px;
+	background-color:white;
+	text-align:center
 
 }
 
@@ -133,12 +145,14 @@ h6{
 	display:table;
 	clear:both;
 }
+.image{
+	flex-basis: 50%;
+}
 
 .about1 {
 	flex: 50%;
 	max-width: 50%;
 	padding: 10px;
-
 }
 .text {
 	font-size: 20px !important;
@@ -180,20 +194,21 @@ body {
 		padding: 14px;
 	}
 
-	.aboutsection .row .menu .content .thumbnail  {
-		flex-direction: column;
-		width: 100%;
-	}
-
 	.thumbnail {
 		width: 500px;
-		height: auto;
+		height: 200px;
 	}
-
-	.braai{
-		width:100%;
-		height:auto;
-	}	
+	/*Reduce the container size*/
+	.display-container{
+		height:100px;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+	}
+	/* tag line */
+	.hh6{
+		display:none;
+	}
+	
 }
 
 /*Large Desktop view*/
@@ -210,13 +225,32 @@ body {
 		height: auto;
 	}	*/
 	.small-about{
-		display:none;
+		background-color:white;
+		display:flex;
+		font-size: 20px;
+		margin:auto;
+		padding: 50px;
 	}
 	 .row{
 		 flex: 33.333%;
 		 max-width: 33.333%;
-
 	 }
+	 .braai{
+		
+		flex-basis: 50%;
+	 }
+	 .text{
+		 font-size: 35px!important;
+	 }
+	 h1{
+		 font-size:40px!important;
+	 }
+	 h6{
+		 font-size: 40px;
+		 font-style:italic;
+	 }
+	 
+	 
 }
 /*laptop*/
 @media screen and (min-width:900px) and (max-width: 1300px){
@@ -232,13 +266,13 @@ body {
 	}	
 	
 	.braai{
-		width: 500px;
-		height:500px;
+		width: 75%;
+		height:auto;
+		align:center
 	}
 	.small-about{
 		display:none;
 	}
-	
 }
 
 /*Phone*/
@@ -252,15 +286,13 @@ body {
 	#text{
 		display: inline;
 	}
-	/*Navigation bar display*/
-	.mainmenu a, .mainmenu input[type=text] {
-		float: none;
-		display: block;
-		text-align: left;
-		width: 100%;
-		margin: 0;
-		padding: 14px;
+	.braai{
+		width: 20%;
+		height:auto;
+		justify-content:center
+	.
 	}
+	
 	
 	.aboutsection{
 		display:none;
@@ -275,4 +307,7 @@ body {
 		display:none;
 	}
 
+	.menu{
+		display:none;
+	}
 }

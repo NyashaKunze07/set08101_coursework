@@ -8,15 +8,16 @@
 	<link rel="stylesheet" href="recipe.css">
 </head>
 <body>
+<script src="recipes.js"></script>
 	<!--navigation bar-->
 	<div class="mainmenu" style="letter-spacing:4px" ;>
 		<a class="active" href="mainmenu.html">NK's Food Court</a>
 		<!--Navigation Links-->
 		<a href="index.html">Home</a>
 		<a href="recipes.html">Recipes</a>
-		<a href="about.html">About</a>
 		
-		<input type="text" placeholder="Search...">
+		<input id="searchbar"  onkey="search_recipe()"type="text" name="searchh" placeholder="Search...">
+		
 	</div>
 	
 	<!--Page content-->
