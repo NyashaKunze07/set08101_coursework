@@ -37,7 +37,7 @@ p {
 		/*Colour of links when hovering*/
 		.mainmenu a:hover {
 			background-color: antiquewhite;
-			color: white;
+			color: black;
 		}
 
 	/*Styling the search box*/
@@ -81,18 +81,19 @@ h6{
 }
 
 .display {
-	position: relative;
-	letter-spacing: 4px;
-	display: block;
-	color: black !important;
+	display:flex;
 	background-color: white !important;
-	font-size: 30px !important;
-	padding: 12px 24px !important;
+	padding: 5px 5px !important;
+	height:200px;
+	max-width:auto;
+	border:black;
+	border:3px black;
 }
 
 .display-image{
-	max-width:auto;
-	justify-content:center!important;
+	flex:20%;
+	padding:5px;
+
 }
 .display-text ,.foot{
 	color:black!important;
@@ -117,80 +118,58 @@ h6{
 	max-width:auto;
 }
 
-
-
 /*flex box*/
-#about {
-	
+.aboutsection{
 	display: flex;
-	flex-wrap: wrap;
 	padding: 16px !important;
-	align-items: center;
 	margin: 30px;
-	background-color: white;
-	text-align: center;
+	background-color: white;	
 	border:3px black;
-	justify-content:center;
+
 }
 
-.aboutsection::before .aboutsection::after{
+.aboutsection::before .aboutsection::after {
 	content:"";
 	display:table;
 	clear:both;
 }
-/*.about1{
-	text-align:center!important;
-	font-size:20px !important;
-	line-height:1.5;
-	color:black;
-	background-color:white;
-	flex:25%
-}*/
 
-
-/*.about1 {
-	font: "Times new Roman" !important;
-	padding: 12px 24px !important;
-	display:flex;
-}
-*/
 .about1 {
-	flex: 33.333%;
-	max-width: 33.333%;
+	flex: 50%;
+	max-width: 50%;
 	padding: 10px;
 
 }
 .text {
-	font-size: 18px !important;
+	font-size: 20px !important;
 	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 	text-justify:auto;
+	justify-content:center;
 }
 /*page background colour*/
 body {
 	background: #d3cdcd;
 }
-menu{
-	display:flex;
-	flex-wrap:wrap;
-	display:block;
+.menu{
+	
+	background-color:white;
 }
 
 .row {
 	display: flex;
 	padding: 12px 24px !important;
-	flex-wrap: wrap;
+	
 }
 
 .thumbnail {
-	flex: 100%;
+	flex: 33.333%;
 	padding: 5px;
 	margin:16px!important;
 }
-/*When the screen is less than 600px wide, stack the lines and search field vertical*/
+
+/*responsive layout*/
 @media screen and (max-width: 800px) {
 	.mainmenu a, .mainmenu input[type=text] {
 		float: none;
@@ -201,34 +180,89 @@ menu{
 		padding: 14px;
 	}
 
-	.mainmenu input[type=text] {
-		border: #000000;
-	}
-
-	.aboutsection .row .menu .content .thumbnail .img {
+	.aboutsection .row .menu .content .thumbnail  {
 		flex-direction: column;
 		width: 100%;
 	}
 
-	img {
-		width: 100%;
+	.thumbnail {
+		width: 500px;
 		height: auto;
 	}
-
-	.abt {
-		display: none;
-	}
-	.braai{
-		display:none;
-	}
+	
 }
 
-@media (min-width: 801px) {
-	.aboutsection .row {
-		width: 49.99999%;
+/*Large Desktop view*/
+@media screen and (min-width:1300px){
+	
+	.about1 {
+		flex: 50%;
+		max-width: 50%;
+		padding: 10px;
+		justify-content:center!important;
 	}
-	.menu {
-		width: 33.3333%;
+	/*.img {
+		width: 100%;
+		height: auto;
+	}	*/
+
+}
+/*laptop*/
+@media screen and (min-width:800px) and (max-width: 1300px){
+	.aboutsection {
+		flex: 100%;
+		max-width: 100%;
+		padding: 10px;
+	}
+	.display-image  {
+		width: 190px;
+		height: 190px;
+		justify-content:center
+	}	
+	.thumbnail{
+		width:500px;
+		height:auto;
+	}
+	.braai{
+		width: 500px;
+		height:500px;
 	}
 
+}
+
+/*Phone*/
+@media screen and (max-width:800px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+		padding: 10px;
+	}
+	.braai{
+		display: none;
+	}
+	#text{
+		display: inline;
+	}
+	/*Navigation bar display*/
+	.mainmenu a, .mainmenu input[type=text] {
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+	}
+
+	.aboutsection .row .menu .thumbnail {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.thumbnail{
+		flex:100%;
+	}
+	
+	.display{
+		display:none;
+	}
 }

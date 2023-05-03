@@ -48,7 +48,6 @@ p{
 	display: block;
 }
 
-	
 .button {
 	background-color: #f0dcce;
 	border: none;
@@ -103,9 +102,7 @@ body {
 		margin: 0;
 		padding: 14px;
 	}
-	.mainmenu input[type=text]{
-		border: #000000;
-	}
+	
 	.row .main {
 		flex-direction: column;
 		max-width: 100%;
