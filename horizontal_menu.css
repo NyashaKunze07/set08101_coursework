@@ -17,7 +17,7 @@ p {
 }
 .mainmenu {
 	overflow: hidden;
-	background: #f0dcce;
+	background: #FFEAD2;
 	padding: 8px 16px !important;
 	/*/position: fixed; set fixed navigation bar
 	width: 100%;
@@ -75,14 +75,17 @@ p {
 	padding-top: 16px !important;
 	padding-bottom: 16px !important;
 	text-align: center !important;
-	background: #d3cdcd !important;
+	background: #DBDFEA !important;
 	width:100%;
 	
 }
 h6{
 	font-size:20px;
 }
-
+h3{
+	font-size: 20px;
+}
+/*Heading */
 .display, .menu {
 	display:flex;
 	background-color: white !important;
@@ -101,24 +104,19 @@ h6{
 	padding:5px;
 
 }
-.display-text ,.foot{
+.display-text {
 	color:black!important;
 	background-color:white!important;
 	font-size:30px!important;
 	padding: 12px 24px !important;
 }
-.button {
-	background-color: lightgray;
-	border: none;
-	color: black;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 25px;
-	margin: 4px 2px;
-	cursor: pointer;
+.foot{
+	color:black!important;
+	background-color:white!important;
+	font-style:Georgia;
+	
 }
+
 .main .content {
 	/*margin-top:30px!important;*/
 	max-width:auto;
@@ -164,7 +162,7 @@ h6{
 }
 /*page background colour*/
 body {
-	background: #d3cdcd;
+	background: #DBDFEA;
 }
 .menu{
 	
