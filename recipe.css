@@ -79,11 +79,7 @@ body {
 	background: #d3cdcd !important;
 }
 
-/*.column {
-	flex: 33.333%;
-	max-width: 33.333%;
-	padding: 10px;
-}*/
+
 .main{
 	max-width:auto;
 	justify-content:center;	
